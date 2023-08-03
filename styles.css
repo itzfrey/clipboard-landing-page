@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --DarkGrayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --font-family: "Bai Jamjuree";
+    --font-400: 400;
+    --font-600: 600;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--DarkGrayish-Blue);
+}
+
+p {
+    font-weight: var(--font-400);
+    line-height: 25px;
+    color: var(--Grayish-Blue);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+
+h3 {
+    font-weight: var(--font-600);
+    font-size: 1.4rem;
+}
+
+body {
+    margin: 0;
+    
+}
+
+header {
+    text-align: center;
+    height: 350px;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-logo {
+      padding-top: 140px;
+      margin-bottom: 0;
+}
+
+.head-text {
+    text-align: center;
+    margin: auto 25px auto;
+}
+
+.head-text h1 {
+    font-size: 1.9rem;
+    font-weight: var(--font-600);
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.head-text p {
+    margin-bottom: 50px;
+}
+
+#ios-button {
+    width: 308px;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: var(--font-600);
+    border-radius: 40px;
+    background-color: var(--Strong-Cyan);
+    color: #fff;
+    border: none;
+    margin-bottom: 25px;
+}
+
+#mac-button {
+    width: 308px;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: var(--font-600);
+    border-radius: 40px;
+    border: none;
+    background-color: var(--Light-Blue);
+    color: #fff;
+}
+
+.keep-track {
+    margin: 150px 25px auto;
+    text-align: center;
+    color: var(--DarkGrayish-Blue);
+}
+
+.keep-track h2 {
+    font-size: 1.6rem;
+    font-weight: var(--font-600);
+    margin-bottom: 20px;
+}
+
+.keep-track p {
+    font-weight: 400;
+}
+
+.about {
+    text-align: center;
+    margin: auto 25px auto;
+}
+
+#about-image {
+    width: 100%;
+    margin: 70px 0 70px;
+}
+
+.about h3 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    margin-bottom: 40px;
+}
+
+.about2 {
+    text-align: center;
+    margin: 200px 25px 100px;
+}
+
+.about2 h2 {
+    margin-bottom: 15px;
+}
+
+#about2-image {
+    width: 100%;
+    margin: 70px 0 70px;
+}
+
+.about3 {
+    text-align: center;
+    margin: auto 20px 150px;
+}
+
+.about3 img {
+    margin-bottom: 50px;
+}
+
+.about3 h3 {
+    margin-bottom: 20px;
+}
+
+#text-icon,
+#preview-icon {
+    margin-top: 50px;
+}
+
+.patners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto 25px auto;
+    justify-content: center;
+    gap: 30px;
+}
+
+.patners img {
+    width: 150px;
+    margin-bottom: 80px;
+}
+
+.clipboard {
+    text-align: center;
+    margin: 120px 25px 200px;
+}
+
+.clipboard h2 {
+    margin-bottom: 20px;
+}
+
+.clipboard p {
+    margin-bottom: 50px;
+}
+
+footer {
+    height: auto;
+    background-color: rgba(214, 241, 241, 0.164);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+footer img {
+    width: 80px;
+    padding-top: 50px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text a {
+    text-decoration: none;
+    margin: 50px 0 auto;
+    font-size: 1.6rem;
+    font-weight: var(--font-400);
+    color: var(--DarkGrayish-Blue);
+}
+
+.footer-text a:hover {
+    color: var(--Strong-Cyan);
+}
+
+#install {
+    margin-bottom: 10px; 
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 30px;
+}
+
+.social-link a:hover {
+    cursor: pointer;
+    color: var(--Strong-Cyan);
+}
+
+
+@media (min-width: 600px) {
+    
+    header {
+        height: 250px;
+        background-image: url(images/bg-header-desktop.png);
+    }
+
+    #header-logo {
+        padding-top: 70px;
+    }
+
+    .head-text {
+        max-width: 605px;
+        margin: 0 auto;
+    }
+
+    .keep-track {
+        max-width: 612px;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+
+    #ios-button {
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    #mac-button {
+        width: 200px;
+    }
+
+    .about {
+        margin: 0;
+        margin-top: 80px;
+    }
+
+    .text-section {
+        margin: auto 25px auto;
+    }
+
+    #about-image {
+        width: 520px;
+        margin: 0;
+    }
+
+    .text-section {
+        width: 343px;
+        margin: 0 auto;
+    }
+
+    .about2 p{
+        margin: 0 auto;
+        max-width: 660px;
+    }
+
+    #about2-image {
+        max-width: 700px;
+    }
+
+    .about3 {
+        display: grid;
+        grid-template-areas: 
+        "blacklist snippet"
+        "preview preview";
+        gap: 20px;
+    }
+
+    .blacklist {
+        grid-area: blacklist;
+    }
+
+    .test {
+        grid-area: snippet;
+    }
+
+    .preview {
+        grid-area: preview;
+    }
+
+    #text-icon {
+        margin-top: 0;
+    }
+
+    .patners {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .clipboard {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 25px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    footer img {
+        margin: auto 100px auto;
+        justify-self: flex-start;
+    }
+
+    .footer-text{
+        display: grid;
+        grid-template-columns: 100px 120px 100px;
+    }
+
+    .footer-text a{
+        width: auto;
+        font-size: 1.1rem;
+        margin: 0;
+        text-align: left;
+    }
+
+    .social-links {
+        width: auto;
+    }
+
+    .icon {
+        margin: auto 10px auto;
+    }
+}
+
+@media (min-width: 900px) {
+    .about {
+        display: flex;
+        gap: 80px;
+        margin-right: 25px;
+    }
+
+    #about-image {
+        width: auto;
+        height: 500px;
+        align-self: center;
+    }
+
+    .text-section {
+        margin-top: 50px;
+        text-align: left;
+        margin: 0;
+        margin: 80px auto auto 30px;
+    }
+
+    #about2-image {
+        max-width: 800px;
+    }
+
+    .about3 {
+        max-width: 1165px;
+        display: grid;
+        grid-template-areas: 
+        "blacklist snippet preview";
+        gap: 20px;
+        margin: 0 auto 150px;
+        padding: 25px;
+    }
+
+    .blacklist {
+        grid-area: blacklist;
+    }
+
+    .test {
+        grid-area: snippet;
+    }
+
+    .preview {
+        grid-area: preview;
+    }
+
+    #preview-icon {
+        margin-top: 0;
+    }
+}
+
+
+    
+
+
+
+
